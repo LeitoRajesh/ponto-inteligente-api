@@ -41,7 +41,7 @@ public class FuncionarioServiceImpl implements FuncionarioService{
 	@Override
 	public Optional<Funcionario> buscarPorId(Long id) {
 		log.info("Buscando funcionário pelo ID {}", id);
-		return Optional.ofNullable(this.funcionarioRepository.findOne(id));
+		return Optional.ofNullable(this.funcionarioRepository.getOne(id));
 	}
 	
 	 

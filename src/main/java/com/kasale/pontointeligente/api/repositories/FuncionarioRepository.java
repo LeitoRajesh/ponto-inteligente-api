@@ -8,11 +8,8 @@ import com.kasale.pontointeligente.api.entities.Funcionario;
 
 @Transactional(readOnly = true)
 public interface FuncionarioRepository extends JpaRepository<Funcionario, Long>{
-
 	
 	Funcionario findByCpf(final String cpf);
-	
-	Funcionario findOne(Long id);	
 	
 	Funcionario findByEmail(final String email);
 	
